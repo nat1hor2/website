@@ -1,0 +1,149 @@
+@keyframes animation-bruh {
+    from {
+        background-color: #000;
+        opacity: 0;
+    }
+
+    to {
+        background-color: rgba(252, 228, 236, 1);
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    background-color: rgba(252, 228, 236, 1);
+    font-size: 1.15rem;
+    overflow-x: hidden;
+    animation-name: animation-bruh;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    font-weight: 500;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+@media (max-width: 1450px) {
+    .wrapper {
+        margin: 0 50px;
+    }
+}
+
+#intro {
+    font-size: 1.6rem;
+    margin: 20px auto 50px auto;
+    text-align: center;
+    max-width: 880px;
+    color: #000;
+    top: -40px;
+}
+
+.meme-container {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    border-radius: 10px;
+    background-color: #34ebd8;
+}
+
+.link-meme {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.meme-container p {
+    margin: 10px 0;
+    color: #000;
+    text-align: center;
+}
+
+.interests {
+}
+
+.the-things {
+    margin-left: 50px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1000px) {
+    .meme-container {
+        float: none;
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    .interests {
+        float: left;
+    }
+}
+
+.credits {
+    position: fixed;
+    color: #fce4ec;
+    font-size: .9rem;
+    margin-top: -20px;
+}
+
+.credits:hover {
+    color: #000;
+}
+
+.music {
+    width: 300px;
+    height: 100px;
+    background-color: cyan;
+    display: none;
+}
+
+.piano-photo {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.piano {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    align-items: center;
+    margin: 40px 20px 40px 0;
+    background-color: #34ebd8;
+    border-radius: 20px;
+    max-width: 650px;
+}
+
+.starwars-photo {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.starwars {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    align-items: center;
+    margin: 40px 20px 40px 0;
+    background-color: #34ebd8;
+    border-radius: 20px;
+    max-width: 650px;
+}
+
+@media (max-width: 670px) {
+    .piano {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .starwars {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+}
